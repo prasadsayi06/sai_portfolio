@@ -1543,4 +1543,15 @@ button:hover {
 
     }
 
+   /* Hide Skills and Education initially */
+#skills,
+#education {
+    display: none;
+}
+
+/* Show them after clicking the button */
+#skills.show-section,
+#education.show-section {
+    display: block;
+}
 }
