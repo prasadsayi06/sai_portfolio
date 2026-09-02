@@ -16,12 +16,17 @@ function showPage(pageName) {
         return;
     }
 
-    // Show Skills or Education when button is clicked
-    if (pageName === "skills" || pageName === "education") {
+    // Show hidden sections when their button is clicked
+    if (
+        pageName === "skills" ||
+        pageName === "hobbies" ||
+        pageName === "education" ||
+        pageName === "allArts"
+    ) {
         selectedPage.classList.add("show-section");
     }
 
-    // Scroll to the selected section
+    // Smoothly scroll to the section
     selectedPage.scrollIntoView({
         behavior: "smooth",
         block: "start"
