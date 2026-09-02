@@ -1543,15 +1543,24 @@ button:hover {
 
     }
 
-   /* Hide Skills and Education initially */
+   /* ==================================================
+   HIDDEN SECTIONS
+================================================== */
+
+/* Hide Skills, Hobbies, Education and All Arts initially */
 #skills,
-#education {
+#hobbies,
+#education,
+#allArts {
     display: none;
 }
 
-/* Show them after clicking the button */
+
+/* Show them after clicking their buttons */
 #skills.show-section,
-#education.show-section {
+#hobbies.show-section,
+#education.show-section,
+#allArts.show-section {
     display: block;
 }
 }
