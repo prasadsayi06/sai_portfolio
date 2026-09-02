@@ -12,15 +12,20 @@ function showPage(pageName) {
 
     const selectedPage = document.getElementById(pageName);
 
-    if (selectedPage) {
-
-        selectedPage.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-
+    if (!selectedPage) {
+        return;
     }
 
+    // Show Skills or Education when button is clicked
+    if (pageName === "skills" || pageName === "education") {
+        selectedPage.classList.add("show-section");
+    }
+
+    // Scroll to the selected section
+    selectedPage.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 }
 
 
