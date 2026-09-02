@@ -173,19 +173,13 @@ nav a:hover {
  
     min-height: 100vh; 
  
-    display: none; 
+    display: flex; 
  
     justify-content: center; 
  
     align-items: center; 
  
     text-align: center; 
-} 
- 
- 
-#home.active { 
- 
-    display: flex; 
 } 
  
  
